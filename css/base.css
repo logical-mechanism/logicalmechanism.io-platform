@@ -27,7 +27,7 @@ body {
     overflow-x: hidden;
     /* Prevents horizontal scroll */
 }
-main {min-height: 2400px;}
+
 nav {
     /* This ensures the navbar sticks to the top of the viewport */
     position: sticky;
@@ -38,11 +38,9 @@ nav {
 
 footer {
     position: relative;
-    /* This is important */
     margin-top: 50px;
     margin-bottom: 125px;
     padding-top: 100px;
-    max-height: 600px;
 }
 
 
@@ -87,7 +85,6 @@ section {
     padding-top: 120px;
     padding-left: 40px;
     padding-right: 40px;
-    max-height: 600px;
 }
 
 
@@ -144,12 +141,9 @@ section {
 }
 
 .icon {
-    /* Adjust size as needed */
-    padding: 10px;
-    -webkit-transition: opacity 0.3s;
-    -o-transition: opacity 0.3s;
-    transition: opacity 0.3s;
-    /* Smooth transition for hover effect */
+    display: inline-flex; /* Aligns children (icons) horizontally */
+    align-items: center; /* Centers items vertically within the container */
+    gap: 10px; /* Adds space between icons if needed */
 }
 
 .contact-text a {
