@@ -2,19 +2,19 @@
 
 # clone the assist library and cd into it
 # Check if the directory 'assist' already exists
-if [ ! -d "assist" ]; then
+if [ ! -d "Assist" ]; then
     # 'assist' directory does not exist, so clone the repository
-    git clone https://github.com/logicalmechanism/assist.git
+    git clone https://github.com/logical-mechanism/Assist.git
     # Change into the 'assist' directory only if the clone was successful
     if [ $? -eq 0 ]; then
-        cd assist/
+        cd Assist/
     else
         echo "Clone failed, not changing directory."
     fi
 else
     echo "Directory 'assist' already exists, skipping clone."
     # Change into the 'assist' directory since it exists
-    cd assist/
+    cd Assist/
 fi
 
 # get main and update it
@@ -31,4 +31,4 @@ cp -r docs/ ../docs
 cd ..
 
 # remove it.
-rm -fr assist/
+rm -fr Assist/
