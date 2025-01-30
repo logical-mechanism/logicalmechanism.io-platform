@@ -90,6 +90,11 @@
         "@type": "Other",
         "label": "The Logical Mechanism GitHub",
         "uri": "https://github.com/logical-mechanism"
+      },
+      {
+        "@type": "Other",
+        "label": "The Logical Mechanism Twitter",
+        "uri": "https://twitter.com/LogicalMechnism"
       }
     ],
     "comment": "Our dRep script can register, unregister, update, and vote."
