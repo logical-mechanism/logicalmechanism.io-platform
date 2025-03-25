@@ -1,0 +1,17 @@
+{
+    "headers": {
+      "/css/*": {
+        "Cache-Control": "public, max-age=2592000"
+      },
+      "/img/*": {
+        "Cache-Control": "public, max-age=2592000"
+      },
+      "/fav/*": {
+        "Cache-Control": "public, max-age=2592000"
+      },
+      "/*.webmanifest": {
+        "Cache-Control": "public, max-age=2592000"
+      }
+    }
+  }
+  
