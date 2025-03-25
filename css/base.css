@@ -72,10 +72,6 @@ nav ul {
     justify-content: center;
 }
 
-nav ul li {
-    margin: 0 10px;
-}
-
 nav ul li a {
     color: #FEEFEE;
     text-decoration: none;
@@ -86,7 +82,6 @@ section {
     padding-left: 40px;
     padding-right: 40px;
 }
-
 
 
 .teal {
