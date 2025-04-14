@@ -133,6 +133,12 @@ section {
     z-index: 1000;
 }
 
+@media (max-width: 600px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }
+
 .icon {
     display: inline-flex; /* Aligns children (icons) horizontally */
     align-items: center; /* Centers items vertically within the container */
