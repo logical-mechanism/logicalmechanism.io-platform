@@ -5,14 +5,9 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    /* Aligns items vertically in the center */
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    /* Centers the content horizontally */
-    gap: 20px;
-    /* Optional: Adds space between text and image */
-    /* max-height: 500px; */
 }
 
 .splash-text a {
@@ -27,14 +22,11 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    /* Each takes up equal amount of space */
 
 }
 
 .splash-image img {
     max-width: 100%;
-    /* Ensures the image is responsive */
-    /* Maintains the aspect ratio */
 }
 
 @media screen and (max-width: 768px) {

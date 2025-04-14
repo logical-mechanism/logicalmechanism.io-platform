@@ -61,31 +61,24 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        /* Stack links vertically */
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        /* Align items in the center */
         width: 100%;
-        /* Full width */
         padding: 0;
-        /* Reset padding */
     }
 
     .nav-bar li a {
         font-size: 0.9rem;
-        /* Adjust the font size as needed */
     }
 
     .nav-bar li {
         margin: 0;
         padding: 5px;
-        /* Reduce margin */
     }
 
     .nav-bar li a {
         padding: 0px 0px;
-        /* Reduce padding */
     }
 
     .hide-on-small {
