@@ -140,10 +140,11 @@ section {
 }
 
 .contact-text {
-    width: 80%;
     margin: auto;
+    width: 80%;
 }
-.contact-text a {
+
+.contact-email {
     text-decoration: none;
     font-weight: bold;
     color: #00ADB5;
@@ -185,4 +186,7 @@ section {
 
 #email {
     color: #ffffff;
+    text-align: center;
+    display: block;
+    padding-bottom: 20px;
 }
