@@ -55,7 +55,7 @@
     justify-content: flex-end;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .nav-bar ul {
         -webkit-box-orient: vertical;
         -webkit-box-align: center;
