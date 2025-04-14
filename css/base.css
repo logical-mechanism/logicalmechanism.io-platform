@@ -134,6 +134,10 @@ section {
     gap: 10px; /* Adds space between icons if needed */
 }
 
+.contact-text {
+    width: 80%;
+    margin: auto;
+}
 .contact-text a {
     text-decoration: none;
     font-weight: bold;

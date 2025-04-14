@@ -58,14 +58,11 @@
 @media (max-width: 767px) {
     .nav-bar ul {
         -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
         width: 100%;
-        padding: 0;
+        padding: 0 10px 0 0;
     }
 
     .nav-bar li a {
