@@ -52,7 +52,7 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        min-height: 230px;
+        min-height: 0px;
     }
 
     .splash-image {
