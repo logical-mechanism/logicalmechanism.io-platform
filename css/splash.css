@@ -17,16 +17,26 @@
 }
 
 
-.splash-text,
+.splash-text {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
 .splash-image {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    max-width: 500px;
 }
 
 .splash-image img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 @media screen and (max-width: 768px) {

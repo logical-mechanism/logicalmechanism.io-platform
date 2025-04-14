@@ -38,6 +38,11 @@ footer {
     padding-top: 80px;
 }
 
+p {
+    line-height: 1.65;
+    margin-bottom: 1em;
+    letter-spacing: 0.02em;
+}
 
 code {
     -webkit-user-select: all;
@@ -134,6 +139,10 @@ section {
     gap: 10px; /* Adds space between icons if needed */
 }
 
+.contact-text {
+    width: 80%;
+    margin: auto;
+}
 .contact-text a {
     text-decoration: none;
     font-weight: bold;
