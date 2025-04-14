@@ -17,12 +17,12 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #222831;
+    background-color: #121212;
     color: #FEEFEE;
     font-family: 'Comfortaa', sans-serif;
     font-size: 18px;
-    background-image: -o-linear-gradient(#222831, #222831 50px, #121212 100px);
-    background-image: linear-gradient(#222831, #222831 50px, #121212 100px);
+    /* background-image: -o-linear-gradient(#222831, #222831 50px, #121212 100px); */
+    /* background-image: linear-gradient(#222831, #222831 50px, #121212 100px); */
     /* Adjust colors and heights */
     overflow-x: hidden;
     /* Prevents horizontal scroll */
@@ -78,7 +78,7 @@ nav ul li a {
 }
 
 section {
-    padding-top: 120px;
+    padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
 }
