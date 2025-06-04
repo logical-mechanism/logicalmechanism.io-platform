@@ -24,6 +24,11 @@ body {
     overflow-x: hidden;
 }
 
+h1 {
+  margin-block: 0.67em;
+  font-size: 2em;
+}
+
 nav {
     position: sticky;
     top: 0;
@@ -112,11 +117,15 @@ section {
     color: #FEEFEE;
     text-decoration: none;
     padding: 7px 3px;
-    border: 2px solid transparent;
+    border: 2px solid;
+    border-color: transparent;
+    transition: border-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+
 }
 
 .btn:hover {
-    border: 2px solid #00ADB5;
+    border-color: #00ADB5;
+    transform: scale(1.05);
 }
 
 .to-top-btn {
@@ -139,6 +148,11 @@ section {
     display: inline-flex; /* Aligns children (icons) horizontally */
     align-items: center; /* Centers items vertically within the container */
     gap: 10px; /* Adds space between icons if needed */
+    transition: transform 0.2s ease-in-out;
+}
+
+.icon img:hover {
+    transform: scale(1.1);
 }
 
 .contact-text {
@@ -147,9 +161,15 @@ section {
 }
 
 .contact-email {
-    text-decoration: none;
     font-weight: bold;
     color: #00ADB5;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    display: inline-block;
+}
+
+.contact-email:hover {
+    color: #1bcbd4;
+    transform: scale(1.05);
 }
 
 .contact-info {
@@ -237,10 +257,11 @@ section {
     color: #ececec;
     text-decoration: none;
     display: inline-block;
-    transition: transform 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .nav-bar a:hover {
+    color: #f4f4f4;
     transform: scale(1.1);
 }
 
@@ -282,6 +303,10 @@ section {
     .hide-on-small {
         display: none;
     }
+}
+
+#splash h2 {
+    color: #AAAAAA;
 }
 
 .splash-container {

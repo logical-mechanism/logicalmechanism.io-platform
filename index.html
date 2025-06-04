@@ -36,60 +36,66 @@
     <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
     <link rel="manifest" href="fav/site.webmanifest">
 
-    <link rel="stylesheet" href="css/mini.base.css">
+    <link rel="preload" href="img/world.webp" as="image" />
+
+    <link rel="stylesheet" href="css/base.css">
+    <!-- <link rel="stylesheet" href="css/mini.base.css"> -->
     <link rel="canonical" href="https://www.logicalmechanism.io/">
 
 </head>
 
 <body>
-
+    <!-- simple back to top button -->
     <a id="top"></a>
-    <a href="#top" class="btn to-top-btn hide-on-mobile">Back To Top</a>
+    <a href="#top" class="btn to-top-btn hide-on-mobile" aria-label="Back to top">↑ Top</a>
 
-    <nav class="nav-bar">
+    <header role="banner">
 
-        <ul class="nav-left">
-            <li><a href="#top">Logical Mechanism</a></li>
-        </ul>
+        <nav class="nav-bar">
+    
+            <ul class="nav-left">
+                <li><a href="#top">Logical Mechanism</a></li>
+            </ul>
+    
+            <ul class="nav-right">
+    
+                <li class="hide-on-small">
+                    <a href="https://cardanoscan.io/drep/drep1y04c5l848c6f47tcaqwxfnh0e6n9ngz4txurcwzvlyuwpjsktpah6" target="_blank" rel="noopener noreferrer" aria-label="Explore the dRep at cardanoscan.io.">dRep</a>
+                </li>
+    
+                <li class="hide-on-small">
+                    <a href="https://cexplorer.io/pool/pool1q7k8mmnvsgthp94hpn8jrnacjewplvywq70eef90fv4nu7gedzp" target="_blank" rel="noopener noreferrer" aria-label="Explore the stake pool at cexplorer.io.">Stake Pool</a>
+                </li>
+    
+                <li class="hide-on-small">
+                    <a href="https://github.com/logical-mechanism" target="_blank" rel="noopener noreferrer" aria-label="Explore the code at GitHub.">GitHub</a>
+                </li>
+    
+                <li>
+                    <a href="#contact" class="pad-right">Contact</a>
+                </li>
+    
+            </ul>
+    
+        </nav>
 
-        <ul class="nav-right">
+    </header>
 
-            <li class="hide-on-small">
-                <a href="https://gov.tools/drep_directory/drep1y04c5l848c6f47tcaqwxfnh0e6n9ngz4txurcwzvlyuwpjsktpah6" target="_blank" rel="noopener noreferrer" aria-label="Explore the dRep at gov.tools." class="">dRep</a>
-            </li>
-
-            <li class="hide-on-small">
-                <a href="https://cexplorer.io/pool/pool1q7k8mmnvsgthp94hpn8jrnacjewplvywq70eef90fv4nu7gedzp" target="_blank" rel="noopener noreferrer" aria-label="Explore the stake pool at cexplorer.io.">Stake Pool</a>
-            </li>
-
-            <li class="hide-on-small">
-                <a href="https://github.com/logical-mechanism" target="_blank" rel="noopener noreferrer" aria-label="Explore the code at GitHub.">GitHub</a>
-            </li>
-
-            <li>
-                <a href="#contact" class="pad-right">Contact</a>
-            </li>
-
-        </ul>
-
-    </nav>
-
-    <main>
+    <main id="main">
 
         <section id="splash" class="centered">
 
-            <h1>Decentralized Applications</h1>
-            <h2>Built on the Cardano Blockchain</h2>
+            <h1>Building Decentralized Applications</h1>
+            <h2>On The Cardano Blockchain</h2>
 
             <div class="splash-container">
 
                 <div class="splash-text hide-on-small">
-                    <p>Our mission is to provide open-sourced decentralized applications for the everyday user.</p>
-                    <p><a href="#contact">Contact</a> to build your decentralized dream.</p>
+                    <p>Our mission is to provide high-quality, open-sourced solutions for the everyday user.</p>
+                    <p><a href="#contact" class="contact-email">Contact Us</a> to start building your decentralized dream.</p>
                 </div>
 
                 <div class="splash-image">
-                    <link rel="preload" href="img/world.webp" as="image" />
                     <img 
                         src="img/world.webp"
                         alt="Logical Mechanism decentralized applications connecting the world on the Cardano blockchain." 
@@ -103,25 +109,25 @@
 
         <section id="contact" class="centered">
 
-            <h2 class="teal">Contact</h2>
+            <h2 class="teal">Contact Us</h2>
 
             <div>
 
                 <div>
                     <p>
-                        Please reach out to us via <a href="mailto:support@logicalmechanism.io" class="contact-email">email</a> at: 
+                        Please reach out via <a href="mailto:support@logicalmechanism.io" class="contact-email">email</a> at: 
                     </p>
 
                     <span id="email">support@logicalmechanism.io</span>
 
                     <p class="hide-on-small contact-text">
-                        At Logical Mechanism, we specialize in providing expert consulting, comprehensive project development, and in-depth research tailored to the evolving world of blockchain technologies. Whether you're starting a new project or need advanced support for ongoing initiatives, our team guides you through every stage.
+                        We specialize in expert consulting, comprehensive project development, and in-depth research tailored to the evolving world of blockchain technologies. Whether you're starting a new project or need advanced support for ongoing initiatives, our team will guide you through every stage of development.
                     </p>
 
                     <br />
 
                     <p class="hide-on-small contact-text">
-                        We understand that every project is unique, with its challenges and opportunities. Instead of a one-size-fits-all approach, we work closely with you to meet your needs and ambitions. This personalized approach ensures we deliver innovative solutions perfectly aligned with your goals.
+                        We understand that every project is unique. Instead of a one-size-fits-all approach, we work closely with you to meet your needs and ambitions. This personalized approach ensures we deliver innovative solutions perfectly aligned with your goals.
                     </p>
 
                     <p>
@@ -134,7 +140,7 @@
 
                     <small>8DF2 B3E9 B711 42BF E4F2 DF15 9C67 8E93 1E72 130D</small>
 
-                    <small><a href="pgp.txt">pgp.txt</a></small>
+                    <small><a href="pgp.txt" class="contact-email">pgp.txt</a></small>
 
                 </div>
 
@@ -188,5 +194,4 @@
     </footer>
 
 </body>
-
 </html>
