@@ -47,6 +47,10 @@
     <!-- hardcore some of the css so on first render it looks some what correct -->
     <style>
         body {
+            background-color: #121212;
+            visibility: hidden;
+        }
+        /* body {
             height: 100%;
             width: 100%;
             margin: 0;
@@ -81,6 +85,9 @@
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
         }
+        .navbar {
+            display: none;
+        }
         .nav-bar ul {
             list-style: none;
             display: -webkit-box;
@@ -110,12 +117,14 @@
             right: 5%;
             background-color: transparent;
             color: #FEEFEE;
-        }
+        } */
     </style>
+    <!-- preload css now -->
     <link rel="preload" href="css/mini.base.css" as="style" onload="this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="css/mini.base.css">
     </noscript>
+
     <link rel="canonical" href="https://www.logicalmechanism.io/">
 
 </head>
