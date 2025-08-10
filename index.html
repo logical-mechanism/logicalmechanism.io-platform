@@ -43,7 +43,8 @@
     <link rel="manifest" href="fav/site.webmanifest">
 
     <link rel="preload" href="img/world.avif" as="image" />
-    <!-- hardcore some of the css -->
+
+    <!-- hardcore some of the css so on first render it looks some what correct -->
     <style>
         body {
             height: 100%;
@@ -56,10 +57,59 @@
             font-size: 18px;
             overflow-x: hidden;
         }
-
         h1 {
             margin-block: 0.67em;
             font-size: 2em;
+        }
+        .nav-bar {
+            background-color: #121212;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 100%;
+            border-bottom: 1px solid transparent;
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .nav-bar ul {
+            list-style: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+        .nav-bar li {
+            margin: 0 5px;
+            padding: 0 5px;
+        }
+        .nav-bar a {
+            color: #ececec;
+            text-decoration: none;
+        }
+        .centered {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            text-align: center;
+        }
+        .btn {
+            text-decoration: none;
+        }
+        .to-top-btn {
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            background-color: transparent;
+            color: #FEEFEE;
         }
     </style>
     <link rel="preload" href="css/mini.base.css" as="style" onload="this.rel='stylesheet'">
