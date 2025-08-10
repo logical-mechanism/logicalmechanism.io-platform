@@ -12,13 +12,13 @@
     <meta property="og:description" content="Providing open-source decentralized applications built on the Cardano blockchain for everyday use.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.logicalmechanism.io/">
-    <meta property="og:image" content="https://www.logicalmechanism.io/img/world.webp">
+    <meta property="og:image" content="https://www.logicalmechanism.io/img/world.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@LogicalMechnism">
     <meta name="twitter:title" content="Logical Mechanism LLC | Technical Consulting | Research & Development">
     <meta name="twitter:description" content="Providing open-source decentralized applications built on the Cardano blockchain for everyday use.">
-    <meta name="twitter:image" content="https://www.logicalmechanism.io/img/world.webp">
+    <meta name="twitter:image" content="https://www.logicalmechanism.io/img/world.png">
 
 
     <title>Logical Mechanism LLC | Technical Consulting | Research & Development</title>
@@ -36,10 +36,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
     <link rel="manifest" href="fav/site.webmanifest">
 
-    <link rel="preload" href="img/world.webp" as="image" />
+    <link rel="preload" href="img/world.avif" as="image" />
 
-    <!-- <link rel="stylesheet" href="css/base.css"> -->
-    <link rel="stylesheet" href="css/mini.base.css">
+    <link rel="preload" href="css/mini.base.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/mini.base.css">
+    </noscript>
     <link rel="canonical" href="https://www.logicalmechanism.io/">
 
 </head>
@@ -97,9 +99,11 @@
 
                 <div class="splash-image">
                     <img 
-                        src="img/world.webp"
+                        src="img/world.avif"
                         alt="Logical Mechanism decentralized applications connecting the world on the Cardano blockchain." 
-                        width="500" height="500"
+                        width="500"
+                        height="500"
+                        fetchpriority="high"
                     >
                 </div>
 
