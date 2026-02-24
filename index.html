@@ -5,13 +5,12 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#121212">
     <meta name="description"
-        content="Cardano consulting and R&D. We build open-source, production-ready Cardano dApps for real-world use. Get expert consulting from idea to launch.">
-    <meta property="og:title" content="Logical Mechanism LLC | Technical Consulting | Research & Development">
+        content="Cardano smart contract development and full stack engineering. We build production software for companies on the Cardano blockchain.">
+    <meta property="og:title" content="Logical Mechanism LLC | Smart Contract Development | Cardano">
     <meta property="og:description"
-        content="Logical Mechanism LLC delivers high-quality, open-source dApps on Cardano, consulting, full-stack development, and research to ship real products.">
+        content="Production smart contracts, off-chain infrastructure, and full stack development on Cardano.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.logicalmechanism.io/">
     <meta property="og:image" content="https://www.logicalmechanism.io/img/world.png">
@@ -22,12 +21,13 @@
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@LogicalMechnism">
-    <meta name="twitter:title" content="Logical Mechanism LLC | Technical Consulting | Research & Development">
+    <meta name="twitter:title" content="Logical Mechanism LLC | Smart Contract Development | Cardano">
     <meta name="twitter:description"
-        content="Logical Mechanism LLC delivers high-quality, open-source dApps on Cardano, consulting, full-stack development, and research to ship real products.">
+        content="Production smart contracts, off-chain infrastructure, and full stack development on Cardano.">
     <meta name="twitter:image" content="https://www.logicalmechanism.io/img/world.png">
     <meta name="twitter:image:alt" content="Logical Mechanism LLC">
-    <title>Logical Mechanism LLC | Technical Consulting | Research & Development</title>
+    <meta name="robots" content="index, follow">
+    <title>Logical Mechanism LLC | Smart Contract Development | Cardano</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap"
@@ -39,7 +39,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
     <link rel="manifest" href="fav/site.webmanifest">
-    <link rel="preload" href="img/world.avif" as="image" />
     <!-- hidden but show the bg color then the h1 hack for the preload -->
     <style>
         :root { color-scheme: dark; }
@@ -78,19 +77,7 @@
 
             <ul class="nav-right">
 
-                <li class="hide-on-small">
-                    <a href="https://cardanoscan.io/drep/drep1y04c5l848c6f47tcaqwxfnh0e6n9ngz4txurcwzvlyuwpjsktpah6"
-                        target="_blank" rel="noopener noreferrer"
-                        aria-label="Explore the dRep at cardanoscan.io.">dRep</a>
-                </li>
-
-                <li class="hide-on-small">
-                    <a href="https://cexplorer.io/pool/pool1q7k8mmnvsgthp94hpn8jrnacjewplvywq70eef90fv4nu7gedzp"
-                        target="_blank" rel="noopener noreferrer"
-                        aria-label="Explore the stake pool at cexplorer.io.">Stake Pool</a>
-                </li>
-
-                <li class="hide-on-small">
+                <li>
                     <a href="https://github.com/logical-mechanism" target="_blank" rel="noopener noreferrer"
                         aria-label="Explore the code at GitHub.">GitHub</a>
                 </li>
@@ -109,21 +96,34 @@
 
         <section id="splash" class="centered">
 
-            <h1>Building Decentralized Applications</h1>
-            <h2>On The Cardano Blockchain</h2>
+            <h1>Smart Contract Development on Cardano</h1>
 
-            <div class="splash-container">
+        </section>
 
-                <div class="splash-text hide-on-small">
-                    <p>Our mission is to deliver high-quality, open-source solutions for everyday users.</p>
-                    <p><a href="#contact" class="contact-email">Contact Us</a> to start building your decentralized
-                        dream.</p>
+        <section id="services" class="centered">
+
+            <h2 class="teal">What We Do</h2>
+
+            <div class="services-grid">
+
+                <div class="service-item">
+                    <h3>On-Chain Logic</h3>
+                    <p>Production ready smart contracts written in Aiken.</p>
                 </div>
 
-                <div class="splash-image">
-                    <img src="img/world.avif"
-                        alt="Logical Mechanism decentralized applications connecting the world on the Cardano blockchain."
-                        width="500" height="500" fetchpriority="high">
+                <div class="service-item">
+                    <h3>Off-Chain Infrastructure</h3>
+                    <p>Transaction building, chain indexing, and backend services that talk to the blockchain.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Frontend Development</h3>
+                    <p>User-facing applications that connect wallets and submit transactions.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Technical Consulting</h3>
+                    <p>Architecture reviews, protocol design, and guidance for teams building on Cardano.</p>
                 </div>
 
             </div>
@@ -132,46 +132,9 @@
 
         <section id="contact" class="centered">
 
-            <h2 class="teal">Contact Us</h2>
+            <h2 class="teal">Get In Touch</h2>
 
-            <div>
-
-                <div>
-                    <p>Please reach out via <a href="mailto:support@logicalmechanism.io" class="contact-email">email</a>
-                        at:</p>
-
-                    <span id="email">support@logicalmechanism.io</span>
-
-                    <p class="hide-on-small contact-text">
-                        We specialize in expert consulting, comprehensive project development, and in-depth research
-                        tailored to the evolving world of blockchain technologies. Whether you're starting a new project
-                        or need advanced support for ongoing initiatives, our team will guide you through every stage of
-                        development.
-                    </p>
-
-                    <br />
-
-                    <p class="hide-on-small contact-text">
-                        We understand that every project is unique. Instead of a one-size-fits-all approach, we work
-                        closely with you to tailor our solutions to meet your specific needs and ambitions. This
-                        personalized approach ensures we deliver innovative solutions perfectly aligned with your goals.
-                    </p>
-
-                    <p>
-                        Let's discuss how we can bring your blockchain dream to life.
-                    </p>
-
-                </div>
-
-                <div class="contact-info">
-
-                    <small>8DF2 B3E9 B711 42BF E4F2 DF15 9C67 8E93 1E72 130D</small>
-
-                    <small><a href="pgp.txt" class="contact-email">pgp.txt</a></small>
-
-                </div>
-
-            </div>
+            <a href="mailto:support@logicalmechanism.io" class="contact-email">support@logicalmechanism.io</a>
 
         </section>
 
@@ -183,7 +146,8 @@
                 href="https://cexplorer.io/pool/pool1q7k8mmnvsgthp94hpn8jrnacjewplvywq70eef90fv4nu7gedzp"
                 target="_blank" rel="noopener noreferrer" aria-label="Explore the stake pool at cexplorer.io."
                 class="contact-email">[LOGIC] stake pool</a>.</p>
-        <p>© 2024-2025 Logical Mechanism LLC</p>
+
+        <p>&copy; 2024-2026 Logical Mechanism LLC</p>
 
         <div class="icon">
 
@@ -203,24 +167,18 @@
 
         </div>
 
-        <div class="pad-top-20">
-
-            <small>cardano:</small>
-
-            <small id="cardano" class="payment-address">
-                addr1q8rdcfvj5a27gmp04q5c4nuly385mseam09y777xa8mjn40ax0z9yaxg2mjj3ctg4uj6ggwsc6nja0kj446w2gv5zcvqjk47zh
-            </small>
-
+        <div class="footer-links">
+            <a href="https://cardanoscan.io/drep/drep1y04c5l848c6f47tcaqwxfnh0e6n9ngz4txurcwzvlyuwpjsktpah6"
+                target="_blank" rel="noopener noreferrer">dRep</a>
+            <span class="footer-sep">&middot;</span>
+            <a href="https://cexplorer.io/pool/pool1q7k8mmnvsgthp94hpn8jrnacjewplvywq70eef90fv4nu7gedzp"
+                target="_blank" rel="noopener noreferrer">Stake Pool</a>
+            <span class="footer-sep">&middot;</span>
+            <a href="pgp.txt">PGP Key</a>
         </div>
 
-        <div class="pad-top-10">
-
-            <small>monero:</small>
-
-            <small id="monero" class="payment-address">
-                44DiRiEWVkXghqESJfMkMG6J3YwMSQqzNaRwEYSYQZBkHJwhRbqsAX76g978xP1b1sHAk8BLbmsmWZff8AVpNaNHRP1jYJM
-            </small>
-
+        <div class="pgp-fingerprint">
+            <small>8DF2 B3E9 B711 42BF E4F2 DF15 9C67 8E93 1E72 130D</small>
         </div>
 
     </footer>
