@@ -39,11 +39,21 @@ Static website for Logical Mechanism LLC — a Cardano blockchain consulting and
 
 - **No JavaScript** — the site does not need it, do not add any
 - **PageSpeed 100s** — every change must preserve perfect Lighthouse scores
-- Body starts `visibility: hidden` with inline dark mode CSS, then CSS loads async — FCP optimization hack
-- Fonts (Comfortaa) preloaded async with noscript fallback
-- Hero image (`img/world.avif`) preloaded with `fetchpriority="high"`
+- Fonts (Comfortaa) loaded via Google Fonts with `preconnect`
 - Static assets cached 30 days via `static.json`
-- Images use `loading="lazy"` and `decoding="async"` except the hero
+- Images use `loading="lazy"` and `decoding="async"`
+
+## Color Palette
+
+Blue-slate dark mode with muted teal accent:
+
+- **Background:** `#0e1117` (blue-black)
+- **Card surface:** `#161b22`
+- **Primary text:** `#e6edf3` (cool white)
+- **Secondary text:** `#8b949e`
+- **Tertiary text:** `#6e7681`
+- **Accent:** `#3dbdb4` (muted teal)
+- **Accent hover:** `#5ed4cb`
 
 ## Code Style
 
