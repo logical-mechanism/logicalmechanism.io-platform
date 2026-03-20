@@ -21,7 +21,6 @@ body {
     font-family: 'Comfortaa', sans-serif;
     font-size: 18px;
     overflow-x: hidden;
-    visibility: visible;
 }
 
 
@@ -313,66 +312,14 @@ section {
     }
 }
 
-/* Services section — primary/secondary hierarchy */
+/* Services note */
 
-.service-primary {
-    max-width: 700px;
-    margin: 0 auto 40px;
-    padding: 24px 24px 24px 28px;
-    border-left: 3px solid #00ADB5;
-    text-align: left;
-}
-
-.service-primary h3 {
-    color: #00ADB5;
-    font-size: 1.15em;
-    margin: 0 0 8px 0;
-}
-
-.service-primary p {
-    color: #AAAAAA;
+.services-note {
+    color: #888888;
     font-size: 0.95em;
-    line-height: 1.5;
-    margin: 0;
-}
-
-.services-secondary {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    max-width: 900px;
+    max-width: 600px;
     margin: 0 auto;
-}
-
-.service-secondary-item {
-    max-width: 260px;
-    text-align: left;
-}
-
-.service-secondary-item h3 {
-    color: #777777;
-    font-size: 0.95em;
-    margin: 0 0 6px 0;
-}
-
-.service-secondary-item p {
-    color: #666666;
-    font-size: 0.85em;
-    line-height: 1.45;
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .services-secondary {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .service-secondary-item {
-        max-width: 100%;
-    }
+    line-height: 1.6;
 }
 
 /* Footer links */
