@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#121212">
+    <meta name="theme-color" content="#0e1117">
     <meta name="description"
         content="Logical Mechanism builds production smart contracts in Aiken on Cardano. Validators, minting policies, and on-chain protocols.">
     <meta property="og:title" content="Logical Mechanism LLC | Cardano Smart Contract Development">
@@ -46,13 +46,13 @@
 </head>
 
 <body>
-    <a id="top"></a>
-    <a href="#top" class="btn to-top-btn hide-on-mobile" aria-label="Back to top">↑ Top</a>
+    <a href="#main-header" class="skip-link">Skip to content</a>
+    <a href="#main-header" class="btn to-top-btn hide-on-mobile" aria-label="Back to top">↑ Top</a>
 
-    <header>
+    <header id="main-header">
         <nav class="nav-bar" aria-label="Primary navigation">
             <ul class="nav-left">
-                <li><a href="#top">Logical Mechanism</a></li>
+                <li><a href="#main-header">Logical Mechanism</a></li>
             </ul>
 
             <ul class="nav-right">
@@ -77,14 +77,14 @@
                 Logical Mechanism builds production smart contracts in Aiken.
                 Validators, minting policies, and on-chain protocols on Cardano.
             </p>
-            <br>
-            <p class="section-intro">
+
+            <p class="section-intro gap-top">
                 Most client work is under NDA. The repositories below are public examples of how we build.
             </p>
         </section>
 
         <section id="work" class="centered">
-            <h2 class="teal">Open Source Work</h2>
+            <h2 class="accent">Open Source Work</h2>
 
             <p class="section-intro">
                 Public repositories that reflect the code quality, scope, and technical depth behind the work.
@@ -101,10 +101,6 @@
                     <p class="repo-desc">
                         Proxy re-encryption on Cardano with zero-knowledge proofs, Plutus v3 validators, and a desktop application.
                     </p>
-                    <div class="repo-meta">
-                        <span>Catalyst Fund 14</span>
-                        <span>1,481 commits</span>
-                    </div>
                 </a>
 
                 <a href="https://github.com/logical-mechanism/Seedelf-Wallet"
@@ -116,9 +112,6 @@
                     <p class="repo-desc">
                         Stealth wallet design using BLS12-381 cryptography and Schnorr proofs on Cardano.
                     </p>
-                    <div class="repo-meta">
-                        <span>763 commits</span>
-                    </div>
                 </a>
 
                 <a href="https://github.com/logical-mechanism/Assist"
@@ -130,10 +123,6 @@
                     <p class="repo-desc">
                         Smart contract library for Aiken with validators, math, and cryptographic primitives.
                     </p>
-                    <div class="repo-meta">
-                        <span>31 releases</span>
-                        <span>311 commits</span>
-                    </div>
                 </a>
 
                 <a href="https://github.com/logical-mechanism/Tx-Simulation"
@@ -157,21 +146,17 @@
             </p>
         </section>
 
-        <section id="services" class="centered">
-            <h2 class="teal">Supporting Implementation</h2>
+        <section id="contact" class="centered">
+            <h2 class="accent">Work With Us</h2>
 
             <p class="services-note">
                 Smart contract development is the core deliverable. When a project needs it, we also handle
                 transaction building, chain indexing, wallet integration, and the surrounding implementation required
                 to ship on Cardano.
             </p>
-        </section>
 
-        <section id="contact" class="centered">
-            <h2 class="teal">Need a Cardano Smart Contract Developer?</h2>
-
-            <p class="subtitle">
-                If you are building on Cardano and need the contract layer implemented in Aiken, reach out.
+            <p class="subtitle gap-top">
+                Building on Cardano and need smart contract development in Aiken? Reach out.
             </p>
 
             <a href="mailto:support@logicalmechanism.io" class="contact-email">support@logicalmechanism.io</a>
@@ -179,7 +164,7 @@
 
     </main>
 
-    <footer class="centered">
+    <footer class="centered" aria-label="Site footer">
 
         <p>
             Logical Mechanism LLC owns and operates the
@@ -210,12 +195,14 @@
 
         <div class="footer-links">
             <a href="https://cardanoscan.io/drep/drep1y04c5l848c6f47tcaqwxfnh0e6n9ngz4txurcwzvlyuwpjsktpah6"
-                target="_blank" rel="noopener noreferrer">dRep</a>
+                target="_blank" rel="noopener noreferrer"
+                aria-label="View dRep profile on Cardanoscan">dRep</a>
             <span class="footer-sep">&middot;</span>
             <a href="https://cexplorer.io/pool/pool1q7k8mmnvsgthp94hpn8jrnacjewplvywq70eef90fv4nu7gedzp"
-                target="_blank" rel="noopener noreferrer">Stake Pool</a>
+                target="_blank" rel="noopener noreferrer"
+                aria-label="View LOGIC stake pool on cexplorer">Stake Pool</a>
             <span class="footer-sep">&middot;</span>
-            <a href="pgp.txt">PGP Key</a>
+            <a href="pgp.txt" aria-label="Download PGP public key">PGP Key</a>
         </div>
 
         <div class="pgp-fingerprint">

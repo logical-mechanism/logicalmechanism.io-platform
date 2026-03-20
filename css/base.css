@@ -2,6 +2,27 @@
     box-sizing: border-box;
 }
 
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background-color: #3dbdb4;
+    color: #0e1117;
+    padding: 8px 16px;
+    font-weight: 700;
+    text-decoration: none;
+    z-index: 2000;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+:focus-visible {
+    outline: 2px solid #3dbdb4;
+    outline-offset: 2px;
+}
+
 html {
     height: 100%;
     width: 100%;
@@ -16,8 +37,8 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #121212;
-    color: #FEEFEE;
+    background-color: #0e1117;
+    color: #e6edf3;
     font-family: 'Comfortaa', sans-serif;
     font-size: 18px;
     overflow-x: hidden;
@@ -26,7 +47,14 @@ body {
 
 h1 {
     margin-block: 0.67em;
-    font-size: 2em;
+    font-size: 2.25em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-block: 0.5em 0.75em;
+    font-weight: 700;
+    letter-spacing: 0.01em;
 }
 
 nav {
@@ -68,7 +96,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #FEEFEE;
+    color: #e6edf3;
     text-decoration: none;
 }
 
@@ -79,8 +107,8 @@ section {
 }
 
 
-.teal {
-    color: #00ADB5;
+.accent {
+    color: #3dbdb4;
 }
 
 .pad-right {
@@ -93,8 +121,8 @@ section {
 }
 
 .btn {
-    background-color: #EEEFEE;
-    color: #FEEFEE;
+    background-color: transparent;
+    color: #e6edf3;
     text-decoration: none;
     padding: 7px 3px;
     border: 2px solid;
@@ -104,7 +132,7 @@ section {
 }
 
 .btn:hover {
-    border-color: #00ADB5;
+    border-color: #3dbdb4;
     transform: scale(1.05);
 }
 
@@ -114,7 +142,7 @@ section {
     right: 5%;
     border-radius: 5px;
     background-color: transparent;
-    color: #FEEFEE;
+    color: #e6edf3;
     z-index: 1000;
 }
 
@@ -137,18 +165,18 @@ section {
 
 .contact-email {
     font-weight: bold;
-    color: #00ADB5;
+    color: #3dbdb4;
     transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
     display: inline-block;
 }
 
 .contact-email:hover {
-    color: #1bcbd4;
+    color: #5ed4cb;
     transform: scale(1.05);
 }
 
 .nav-bar {
-    background-color: #121212;
+    background-color: #0e1117;
     padding-top: 1px;
     padding-bottom: 1px;
     display: flex;
@@ -172,14 +200,14 @@ section {
 }
 
 .nav-bar a {
-    color: #ececec;
+    color: #c9d1d9;
     text-decoration: none;
     display: inline-block;
     transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .nav-bar a:hover {
-    color: #f4f4f4;
+    color: #e6edf3;
     transform: scale(1.1);
 }
 
@@ -231,20 +259,26 @@ section {
 }
 
 .subtitle {
-    color: #AAAAAA;
+    color: #8b949e;
     font-size: 1.05em;
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.6;
 }
 
+.gap-top {
+    margin-top: 2.5em;
+}
+
 /* Open Source Work section */
 
 .section-intro {
-    color: #888888;
+    color: #6e7681;
     font-size: 0.95em;
     max-width: 700px;
-    margin: 0 auto 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     line-height: 1.5;
 }
 
@@ -259,25 +293,27 @@ section {
 .repo-card {
     display: block;
     text-decoration: none;
-    border: 1px solid #2a2a2a;
+    background-color: #161b22;
+    border: 1px solid #30363d;
     border-radius: 8px;
     padding: 24px;
     text-align: left;
-    transition: border-color 0.2s ease-in-out;
+    transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .repo-card:hover {
-    border-color: #00ADB5;
+    border-color: #3dbdb4;
+    background-color: #1c2129;
 }
 
 .repo-card h3 {
-    color: #FEEFEE;
-    font-size: 1.05em;
+    color: #e6edf3;
+    font-size: 1.15em;
     margin: 0 0 8px 0;
 }
 
 .repo-desc {
-    color: #AAAAAA;
+    color: #8b949e;
     font-size: 0.88em;
     line-height: 1.5;
     margin: 0 0 12px 0;
@@ -288,7 +324,7 @@ section {
     flex-wrap: wrap;
     gap: 12px;
     font-size: 0.78em;
-    color: #666666;
+    color: #6e7681;
 }
 
 .github-cta {
@@ -296,14 +332,14 @@ section {
 }
 
 .github-cta a {
-    color: #00ADB5;
+    color: #3dbdb4;
     font-weight: bold;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
 }
 
 .github-cta a:hover {
-    color: #1bcbd4;
+    color: #5ed4cb;
 }
 
 @media (max-width: 768px) {
@@ -315,7 +351,7 @@ section {
 /* Services note */
 
 .services-note {
-    color: #888888;
+    color: #6e7681;
     font-size: 0.95em;
     max-width: 600px;
     margin: 0 auto;
@@ -329,21 +365,21 @@ section {
 }
 
 .footer-links a {
-    color: #AAAAAA;
+    color: #8b949e;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
 }
 
 .footer-links a:hover {
-    color: #00ADB5;
+    color: #3dbdb4;
 }
 
 .footer-sep {
-    color: #555555;
+    color: #484f58;
     padding: 0 8px;
 }
 
 .pgp-fingerprint {
     padding-top: 10px;
-    color: #555555;
+    color: #484f58;
 }
