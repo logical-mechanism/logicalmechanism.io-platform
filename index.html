@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#121212">
     <meta name="description"
-        content="Cardano smart contract development and full stack engineering. We build production software for companies on the Cardano blockchain.">
-    <meta property="og:title" content="Logical Mechanism LLC | Smart Contract Development | Cardano">
+        content="Logical Mechanism builds production smart contracts in Aiken on Cardano. On-chain logic for protocols, wallets, and infrastructure.">
+    <meta property="og:title" content="Logical Mechanism LLC | Cardano Smart Contracts in Aiken">
     <meta property="og:description"
-        content="Production smart contracts, off-chain infrastructure, and full stack development on Cardano.">
+        content="Production smart contracts in Aiken on Cardano. On-chain logic for protocols, wallets, and infrastructure.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.logicalmechanism.io/">
     <meta property="og:image" content="https://www.logicalmechanism.io/img/world.png">
@@ -21,13 +21,13 @@
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@LogicalMechnism">
-    <meta name="twitter:title" content="Logical Mechanism LLC | Smart Contract Development | Cardano">
+    <meta name="twitter:title" content="Logical Mechanism LLC | Cardano Smart Contracts in Aiken">
     <meta name="twitter:description"
-        content="Production smart contracts, off-chain infrastructure, and full stack development on Cardano.">
+        content="Production smart contracts in Aiken on Cardano. On-chain logic for protocols, wallets, and infrastructure.">
     <meta name="twitter:image" content="https://www.logicalmechanism.io/img/world.png">
     <meta name="twitter:image:alt" content="Logical Mechanism LLC">
     <meta name="robots" content="index, follow">
-    <title>Logical Mechanism LLC | Smart Contract Development | Cardano</title>
+    <title>Logical Mechanism LLC | Cardano Smart Contracts in Aiken</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap"
@@ -78,12 +78,18 @@
             <ul class="nav-right">
 
                 <li>
-                    <a href="https://github.com/logical-mechanism" target="_blank" rel="noopener noreferrer"
-                        aria-label="Explore the code at GitHub.">GitHub</a>
+                    <a href="#work">Work</a>
                 </li>
 
                 <li>
-                    <a href="#contact" class="pad-right">Contact</a>
+                    <a href="#contact">Contact</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/logical-mechanism" target="_blank" rel="noopener noreferrer"
+                        aria-label="Explore the code on GitHub.">
+                        <img src="img/github.svg" alt="GitHub" width="20" height="20" class="nav-icon">
+                    </a>
                 </li>
 
             </ul>
@@ -96,7 +102,70 @@
 
         <section id="splash" class="centered">
 
-            <h1>Smart Contract Development on Cardano</h1>
+            <h1>Cardano Smart Contracts</h1>
+
+            <p class="subtitle">Logical Mechanism builds production smart contracts in Aiken. On-chain logic for protocols, wallets, and infrastructure on Cardano.</p>
+
+        </section>
+
+        <section id="work" class="centered">
+
+            <h2 class="teal">Open Source Work</h2>
+
+            <p class="section-intro">Most client work is under NDA. These public repositories show how we write code.</p>
+
+            <div class="repo-grid">
+
+                <a href="https://github.com/logical-mechanism/peace-protocol" target="_blank"
+                    rel="noopener noreferrer" class="repo-card"
+                    aria-label="peace-protocol — proxy re-encryption protocol on GitHub">
+                    <h3>peace-protocol</h3>
+                    <p class="repo-desc">A proxy re-encryption protocol on Cardano. Zero-knowledge proofs, five Plutus v3 validators, and a desktop application.</p>
+                    <div class="repo-meta">
+                        <span>1,481 commits</span>
+                        <span>Fund 14</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/logical-mechanism/Seedelf-Wallet" target="_blank"
+                    rel="noopener noreferrer" class="repo-card"
+                    aria-label="Seedelf-Wallet — stealth wallet on GitHub">
+                    <h3>Seedelf-Wallet</h3>
+                    <p class="repo-desc">A stealth wallet using BLS12-381 cryptography and Schnorr proofs on Cardano.</p>
+                    <div class="repo-meta">
+                        <span>763 commits</span>
+                        <span>★ 13</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/logical-mechanism/Assist" target="_blank"
+                    rel="noopener noreferrer" class="repo-card"
+                    aria-label="Assist — Aiken smart contract library on GitHub">
+                    <h3>Assist</h3>
+                    <p class="repo-desc">A smart contract library for Aiken. Validators, math, and cryptographic primitives.</p>
+                    <div class="repo-meta">
+                        <span>311 commits</span>
+                        <span>31 releases</span>
+                        <span>★ 18</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/logical-mechanism/Tx-Simulation" target="_blank"
+                    rel="noopener noreferrer" class="repo-card"
+                    aria-label="Tx-Simulation — transaction simulation tooling on GitHub">
+                    <h3>Tx-Simulation</h3>
+                    <p class="repo-desc">Transaction simulation tooling for Aiken and Koios.</p>
+                    <div class="repo-meta">
+                        <span>★ 8</span>
+                    </div>
+                </a>
+
+            </div>
+
+            <p class="github-cta">
+                <a href="https://github.com/logical-mechanism" target="_blank" rel="noopener noreferrer"
+                    aria-label="View all repositories on GitHub">View all repositories →</a>
+            </p>
 
         </section>
 
@@ -104,26 +173,26 @@
 
             <h2 class="teal">What We Do</h2>
 
-            <div class="services-grid">
+            <div class="service-primary">
+                <h3>Smart Contract Development</h3>
+                <p>Production validators, minting policies, and on-chain logic in Aiken. From architecture through implementation.</p>
+            </div>
 
-                <div class="service-item">
-                    <h3>On-Chain Logic</h3>
-                    <p>Production ready smart contracts written in Aiken.</p>
-                </div>
+            <div class="services-secondary">
 
-                <div class="service-item">
+                <div class="service-secondary-item">
                     <h3>Off-Chain Infrastructure</h3>
-                    <p>Transaction building, chain indexing, and backend services that talk to the blockchain.</p>
+                    <p>Transaction building, chain indexing, and backend services.</p>
                 </div>
 
-                <div class="service-item">
-                    <h3>Frontend Development</h3>
-                    <p>User-facing applications that connect wallets and submit transactions.</p>
+                <div class="service-secondary-item">
+                    <h3>Frontend Integration</h3>
+                    <p>Wallet connections, transaction submission, and user interfaces.</p>
                 </div>
 
-                <div class="service-item">
+                <div class="service-secondary-item">
                     <h3>Technical Consulting</h3>
-                    <p>Architecture reviews, protocol design, and guidance for teams building on Cardano.</p>
+                    <p>Architecture reviews, protocol design, and implementation guidance.</p>
                 </div>
 
             </div>
@@ -132,7 +201,9 @@
 
         <section id="contact" class="centered">
 
-            <h2 class="teal">Get In Touch</h2>
+            <h2 class="teal">Work With Us</h2>
+
+            <p class="subtitle">Have a project on Cardano? Reach out.</p>
 
             <a href="mailto:support@logicalmechanism.io" class="contact-email">support@logicalmechanism.io</a>
 

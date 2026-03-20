@@ -26,8 +26,8 @@ body {
 
 
 h1 {
-  margin-block: 0.67em;
-  font-size: 2em;
+    margin-block: 0.67em;
+    font-size: 2em;
 }
 
 nav {
@@ -192,6 +192,17 @@ section {
     justify-content: flex-end;
 }
 
+.nav-right li {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
 @media (max-width: 768px) {
     .nav-bar ul {
         align-items: center;
@@ -213,46 +224,153 @@ section {
     }
 }
 
+/* Hero */
+
 #splash {
     padding-top: 80px;
     padding-bottom: 40px;
 }
 
-/* Services section */
-
-.services-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    max-width: 900px;
-    margin: 30px auto 0;
-}
-
-.service-item {
-    max-width: 420px;
-}
-
-.service-item h3 {
-    color: #00ADB5;
-    margin-bottom: 0.4em;
-    font-size: 1.1em;
-}
-
-.service-item p {
+.subtitle {
     color: #AAAAAA;
+    font-size: 1.05em;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Open Source Work section */
+
+.section-intro {
+    color: #888888;
     font-size: 0.95em;
+    max-width: 700px;
+    margin: 0 auto 30px;
     line-height: 1.5;
 }
 
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.repo-card {
+    display: block;
+    text-decoration: none;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    padding: 24px;
+    text-align: left;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.repo-card:hover {
+    border-color: #00ADB5;
+}
+
+.repo-card h3 {
+    color: #FEEFEE;
+    font-size: 1.05em;
+    margin: 0 0 8px 0;
+}
+
+.repo-desc {
+    color: #AAAAAA;
+    font-size: 0.88em;
+    line-height: 1.5;
+    margin: 0 0 12px 0;
+}
+
+.repo-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 0.78em;
+    color: #666666;
+}
+
+.github-cta {
+    margin-top: 28px;
+}
+
+.github-cta a {
+    color: #00ADB5;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.github-cta a:hover {
+    color: #1bcbd4;
+}
+
 @media (max-width: 768px) {
-    .services-grid {
+    .repo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Services section — primary/secondary hierarchy */
+
+.service-primary {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    padding: 24px 24px 24px 28px;
+    border-left: 3px solid #00ADB5;
+    text-align: left;
+}
+
+.service-primary h3 {
+    color: #00ADB5;
+    font-size: 1.15em;
+    margin: 0 0 8px 0;
+}
+
+.service-primary p {
+    color: #AAAAAA;
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.services-secondary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.service-secondary-item {
+    max-width: 260px;
+    text-align: left;
+}
+
+.service-secondary-item h3 {
+    color: #777777;
+    font-size: 0.95em;
+    margin: 0 0 6px 0;
+}
+
+.service-secondary-item p {
+    color: #666666;
+    font-size: 0.85em;
+    line-height: 1.45;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .services-secondary {
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 20px;
     }
 
-    .service-item {
+    .service-secondary-item {
         max-width: 100%;
     }
 }
