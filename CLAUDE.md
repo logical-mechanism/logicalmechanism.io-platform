@@ -2,7 +2,9 @@
 
 ## Project Overview
 
-Static website for Logical Mechanism LLC — a Cardano blockchain consulting and R&D company. Pure HTML and CSS, no JavaScript. Optimized for perfect PageSpeed Insights scores (100s across the board).
+Static website for Logical Mechanism LLC — a Cardano smart contract and R&D company focused on cryptography and privacy (tagline: "Cryptography, privacy, and decentralized systems"). Makers of the Seedelf Wallet. Pure HTML and CSS, no JavaScript. Optimized for perfect PageSpeed Insights scores (100s across the board).
+
+The company is deliberately anonymous: no people, names, or faces on the site. Client work is under NDA, so no client names or logos either. Trust comes from Logical Mechanism's own products and the infrastructure it runs.
 
 ## Tech Stack
 
@@ -13,9 +15,14 @@ Static website for Logical Mechanism LLC — a Cardano blockchain consulting and
 
 ```
 ├── index.html          # The site — single-page landing
-├── css/mini.base.css   # Stylesheet (minified)
-├── img/                # Images (avif/svg preferred)
-├── fav/                # Favicons and webmanifest
+├── css/base.css        # Stylesheet source (edit this)
+├── css/mini.base.css   # Minified stylesheet (what index.html loads)
+├── fonts/              # Self-hosted IBM Plex Mono + Sans (latin, 400) and OFL license
+├── img/mark.svg        # LM mark, standalone (for dark backgrounds)
+├── img/og.png          # 1200x630 link-preview card (og:image)
+├── img/fullLogo.png    # Old logo; referenced by stake pool + dRep metadata, do not delete
+├── img/poolLogo.png    # Referenced by stake pool metadata, do not delete
+├── fav/                # Favicons (svg + png + ico) and webmanifest
 ├── docs/               # Aiken-generated documentation (auto-generated, do not hand-edit)
 ├── app/                # Dead code — legacy Next.js app, not in use
 ├── webserver.sh        # `python3 -m http.server` for local dev
@@ -39,21 +46,32 @@ Static website for Logical Mechanism LLC — a Cardano blockchain consulting and
 
 - **No JavaScript** — the site does not need it, do not add any
 - **PageSpeed 100s** — every change must preserve perfect Lighthouse scores
-- Fonts (Comfortaa) loaded via Google Fonts with `preconnect`
+- **No third-party requests** — everything is served from this domain; the footer says so, keep it true
+- Fonts are self-hosted WOFF2, preloaded, with `font-display: optional` (zero layout shift)
+- Icons and the mark are inline SVG (no extra requests)
 - Static assets cached 30 days via `static.json`
-- Images use `loading="lazy"` and `decoding="async"`
+- Wrap every email address in `<!--email_off-->...<!--/email_off-->`; otherwise Cloudflare (in front of DigitalOcean) rewrites it and injects an email-decode script
 
 ## Color Palette
 
-Blue-slate dark mode with muted teal accent:
+Dark slate-indigo with a blue-to-violet accent (taken from the 2026 brand art). Defined as CSS variables in `css/base.css`:
 
-- **Background:** `#0e1117` (blue-black)
-- **Card surface:** `#161b22`
-- **Primary text:** `#e6edf3` (cool white)
-- **Secondary text:** `#8b949e`
-- **Tertiary text:** `#6e7681`
-- **Accent:** `#3dbdb4` (muted teal)
-- **Accent hover:** `#5ed4cb`
+- **night** `#0c1020` — background
+- **line** `#262f4b` — hairlines, borders
+- **paper** `#e7eaf4` — primary text
+- **mist** `#a1aac4` — secondary text
+- **dim** `#8790ae` — tertiary text (lowest allowed; 5.97:1 on night)
+- **blue** `#86aaf6` — accent, buttons, links (hover `#a9c2f9`)
+- **violet** `#b9a4f3` — second accent; gradients run blue → violet
+
+All text must stay at or above 4.5:1 contrast on `night`.
+
+## Brand
+
+- **Wordmark:** "LOGICAL MECHANISM" in IBM Plex Mono, uppercase, `letter-spacing: 0.32em`, stacked on two lines
+- **Mark:** one continuous line `M34 52H12V12L32 34L52 12V…` (64×64 viewBox): the L's stem is also the M's left stem. Hollow nodes at the three upper joints. Gradient blue → violet. Favicons drop to solid nodes or no nodes at small sizes
+- **Type:** IBM Plex Mono for the wordmark and headings, IBM Plex Sans for body text; both 400 only, no bold
+- **Section dividers:** a hairline that starts in a small node ring, echoing the mark
 
 ## Code Style
 
