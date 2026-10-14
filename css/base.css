@@ -328,15 +328,15 @@ main:focus {
     background-color: var(--night);
 }
 
-#seedelf {
+#services {
     --node: #86aaf6;
 }
 
-#services {
+#seedelf {
     --node: #98a8f5;
 }
 
-#more {
+#collateral {
     --node: #a9a6f4;
 }
 
@@ -415,46 +415,100 @@ main:focus {
     margin-top: 1.75rem;
 }
 
-.services h3,
-.projects h3 {
+.services h3 {
     margin-bottom: 0.375rem;
     font-size: 1.125rem;
     line-height: 1.4;
 }
 
-.services p,
-.projects p {
+.services p {
     color: var(--mist);
     font-size: 1.0625rem;
 }
 
-/* Open source and infrastructure */
+/* Service titles decrypt from hex into plain text: once on load, right after
+   the hero mark draws, and again as each service scrolls in from the bottom
+   edge (finished before it is fully on screen, so nothing sits scrambled).
+   Frames are pre-rendered in the HTML; the plain title is what screen
+   readers and reduced-motion visitors get. */
 
-.projects {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2.25rem 2.5rem;
-    padding: 0;
-    list-style: none;
+.decrypt .cipher {
+    display: none;
 }
 
-.projects .links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem 1.25rem;
-    margin-top: 0.625rem;
-    font-size: 1rem;
+@media (prefers-reduced-motion: no-preference) {
+    .services .decrypt {
+        font-size: min(1.125rem, calc((100vw - 2.5rem) / 19.5));
+    }
+
+    .decrypt .plain {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+    }
+
+    .decrypt .cipher {
+        display: block;
+        height: 1.4em;
+        overflow: clip;
+    }
+
+    .decrypt .strip {
+        display: block;
+        animation: decrypt 0.9s steps(8, jump-none) 1.5s both;
+    }
+
+    .services li:nth-child(2) .strip {
+        animation-delay: 1.8s;
+    }
+
+    .services li:nth-child(3) .strip {
+        animation-delay: 2.1s;
+    }
+
+    .decrypt .strip > span {
+        display: block;
+        height: 1.4em;
+        white-space: pre;
+        color: var(--violet);
+    }
+
+    .decrypt .strip > span:last-child {
+        color: var(--paper);
+    }
+
+    @supports (animation-timeline: view()) {
+        .services li {
+            view-timeline: --service block;
+        }
+
+        .decrypt .strip {
+            animation: decrypt 0.9s steps(8, jump-none) 1.5s both, decrypt steps(8, jump-none);
+            animation-timeline: auto, --service;
+            animation-range: normal, entry 0% entry 75%;
+        }
+
+        .services li:nth-child(2) .strip {
+            animation-delay: 1.8s, 0s;
+        }
+
+        .services li:nth-child(3) .strip {
+            animation-delay: 2.1s, 0s;
+        }
+    }
 }
 
-.projects .links a {
-    color: var(--blue);
-    text-decoration: none;
-}
+@keyframes decrypt {
+    from {
+        transform: translateY(0);
+    }
 
-.projects .links a:hover {
-    color: var(--blue-hover);
-    text-decoration: underline;
-    text-underline-offset: 0.25em;
+    to {
+        transform: translateY(-9.8em);
+    }
 }
 
 /* Contact */
@@ -533,6 +587,7 @@ main:focus {
 
 .social {
     display: flex;
+    align-items: center;
     gap: 1.25rem;
     padding: 0;
     list-style: none;
@@ -546,6 +601,17 @@ main:focus {
 
 .social a:hover {
     color: var(--paper);
+}
+
+.social .footer-text-link {
+    color: var(--mist);
+    text-decoration: none;
+}
+
+.social .footer-text-link:hover {
+    color: var(--paper);
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
 }
 
 /* Responsive */
@@ -562,19 +628,11 @@ main:focus {
     .section-grid {
         grid-template-columns: minmax(0, 1fr);
     }
-
-    .projects {
-        grid-template-columns: minmax(0, 1fr);
-    }
 }
 
-@media (max-width: 32rem) {
+@media (max-width: 23rem) {
     .nav-links .nav-github {
         display: none;
-    }
-
-    .nav-links a {
-        font-size: 0.9375rem;
     }
 }
 

@@ -60,7 +60,6 @@
             </a>
 
             <ul class="nav-links">
-                <li><a href="#seedelf">Seedelf</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li class="nav-github">
@@ -86,7 +85,6 @@
                 </p>
                 <p class="actions">
                     <!--email_off--><a class="button" href="mailto:support@logicalmechanism.io">Email us</a><!--/email_off-->
-                    <a class="text-link" href="#seedelf">See the Seedelf Wallet</a>
                 </p>
             </div>
 
@@ -106,6 +104,70 @@
                     <circle class="node n3" cx="52" cy="12" r="4.25"/>
                 </g>
             </svg>
+        </section>
+
+
+
+        <section class="wrap" id="services" aria-labelledby="services-title">
+            <div class="section-grid">
+                <h2 id="services-title">Services</h2>
+                <div class="section-body">
+                    <ul class="services">
+                        <li>
+                            <h3 class="decrypt">
+                                <span class="plain">Smart contracts</span>
+                                <span class="cipher" aria-hidden="true"><span class="strip">
+                                    <span>f7d51 b1e3b0444</span>
+                                    <span>21b3b 2cn637c90</span>
+                                    <span>8m05t 3an7afc05</span>
+                                    <span>4maft don9cfc12</span>
+                                    <span>0ma5t confa7c2s</span>
+                                    <span>9mart conte3ccs</span>
+                                    <span>Smart contf7cts</span>
+                                    <span>Smart contracts</span>
+                                </span></span>
+                            </h3>
+                            <p>Designed, written, and tested in Aiken, from the first specification to mainnet.</p>
+                        </li>
+                        <li>
+                            <h3 class="decrypt">
+                                <span class="plain">Everything around the contract</span>
+                                <span class="cipher" aria-hidden="true"><span class="strip">
+                                    <span>807c46a85e 0cf7de 631 e4a872c8</span>
+                                    <span>30e7f0h5c0 b1283b 7d7 9oatd74d</span>
+                                    <span>41edecha2g a75ueb 320 3o1tr6ec</span>
+                                    <span>d4e423he0g ad5uf0 the eo4tr9ct</span>
+                                    <span>Efe298ha4g a42u8d thc co6tr2ct</span>
+                                    <span>E3er5dh2ng ar5ubd thb contr2ct</span>
+                                    <span>Ever5ahang ar6und the contract</span>
+                                    <span>Everything around the contract</span>
+                                </span></span>
+                            </h3>
+                            <p>Transaction building, chain indexing, and wallet integration, so people can use what you deploy.</p>
+                        </li>
+                        <li>
+                            <h3 class="decrypt">
+                                <span class="plain">Cryptography and protocol design</span>
+                                <span class="cipher" aria-hidden="true"><span class="strip">
+                                    <span>09f1ee80aa28 005 3dc1ee51 1fe9e0</span>
+                                    <span>d1yebeb8aa60 e47 4foac759 df8713</span>
+                                    <span>ery9boc0adcf 6n7 73o95eal d7dafb</span>
+                                    <span>Crya6oa8a703 dne ero454cl deb3g0</span>
+                                    <span>Crypto6fapb1 enb fro0ac8l deefgn</span>
+                                    <span>Cryptogcap70 dnd 1rod1cal design</span>
+                                    <span>Cryptograp6d and 8ro5ocol design</span>
+                                    <span>Cryptography and protocol design</span>
+                                </span></span>
+                            </h3>
+                            <p>For projects that need privacy, proofs, or something that hasn't been built on Cardano yet.</p>
+                        </li>
+                    </ul>
+                    <p class="note">
+                        Client work is confidential by contract, so it isn't listed here. Our own work is public on
+                        <a href="https://github.com/logical-mechanism" target="_blank" rel="noopener noreferrer">GitHub</a>.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section class="wrap" id="seedelf" aria-labelledby="seedelf-title">
@@ -128,81 +190,25 @@
                             href="https://chromewebstore.google.com/detail/seedelf-wallet/dkefopeefhophfkjkkdebhoklagjdmcp"
                             target="_blank" rel="noopener noreferrer">Get Seedelf for Chrome</a>
                         <a class="text-link" href="https://github.com/logical-mechanism/Seedelf-Wallet"
-                            target="_blank" rel="noopener noreferrer">Read the source code</a>
+                            target="_blank" rel="noopener noreferrer">Read the source code<span class="vh"> for Seedelf</span></a>
                     </p>
                 </div>
             </div>
         </section>
 
-        <section class="wrap" id="services" aria-labelledby="services-title">
+        <section class="wrap" id="collateral" aria-labelledby="collateral-title">
             <div class="section-grid">
-                <h2 id="services-title">Services</h2>
+                <h2 id="collateral-title">Collateral Provider</h2>
                 <div class="section-body">
-                    <ul class="services">
-                        <li>
-                            <h3>Smart contracts</h3>
-                            <p>Designed, written, and tested in Aiken, from the first specification to mainnet.</p>
-                        </li>
-                        <li>
-                            <h3>Everything around the contract</h3>
-                            <p>Transaction building, chain indexing, and wallet integration, so people can use what you deploy.</p>
-                        </li>
-                        <li>
-                            <h3>Cryptography and protocol design</h3>
-                            <p>For projects that need privacy, proofs, or something that hasn't been built on Cardano yet.</p>
-                        </li>
-                    </ul>
-                    <p class="note">
-                        Client work is confidential by contract, so it isn't listed here. Our own work is public on
-                        <a href="https://github.com/logical-mechanism" target="_blank" rel="noopener noreferrer">GitHub</a>.
+                    <p class="intro">
+                        Every smart contract transaction on Cardano needs collateral. The Collateral Provider signs
+                        with a shared collateral UTxO, so wallets and apps don't have to set aside their own. It's
+                        free to use, and Seedelf relies on it.
                     </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="wrap" id="more" aria-labelledby="more-title">
-            <div class="section-grid">
-                <h2 id="more-title">Open source and infrastructure</h2>
-                <div class="section-body">
-                    <ul class="projects">
-                        <li>
-                            <h3>Assist</h3>
-                            <p>An Aiken library of helpers for validators, math, and cryptography.</p>
-                            <p class="links">
-                                <a href="docs/">Documentation<span class="vh"> for Assist</span></a>
-                                <a href="https://github.com/logical-mechanism/Assist" target="_blank"
-                                    rel="noopener noreferrer">Source code<span class="vh"> for Assist</span></a>
-                            </p>
-                        </li>
-                        <li>
-                            <h3>Collateral Provider</h3>
-                            <p>A free, shared collateral service for smart contract transactions on Cardano.</p>
-                            <p class="links">
-                                <a href="https://giveme.my/" target="_blank" rel="noopener noreferrer">giveme.my</a>
-                                <a href="https://github.com/logical-mechanism/Collateral-Provider" target="_blank"
-                                    rel="noopener noreferrer">Source code<span class="vh"> for the Collateral Provider</span></a>
-                            </p>
-                        </li>
-                        <li>
-                            <h3>[LOGIC] stake pool</h3>
-                            <p>A single bare-metal pool. Seedelf transactions reach the network through its relay.</p>
-                            <p class="links">
-                                <a href="https://cexplorer.io/pool/pool1q7k8mmnvsgthp94hpn8jrnacjewplvywq70eef90fv4nu7gedzp"
-                                    target="_blank" rel="noopener noreferrer">View the pool on Cexplorer</a>
-                            </p>
-                        </li>
-                        <li>
-                            <h3>dRep</h3>
-                            <p>A registered delegated representative in Cardano governance.</p>
-                            <p class="links">
-                                <a href="https://cardanoscan.io/drep/drep1y04c5l848c6f47tcaqwxfnh0e6n9ngz4txurcwzvlyuwpjsktpah6"
-                                    target="_blank" rel="noopener noreferrer">View the dRep on Cardanoscan</a>
-                            </p>
-                        </li>
-                    </ul>
-                    <p class="note">
-                        <a href="https://github.com/logical-mechanism" target="_blank" rel="noopener noreferrer">See all
-                            repositories on GitHub</a>
+                    <p class="actions">
+                        <a class="text-link" href="https://giveme.my/" target="_blank" rel="noopener noreferrer">Visit giveme.my</a>
+                        <a class="text-link" href="https://github.com/logical-mechanism/Collateral-Provider"
+                            target="_blank" rel="noopener noreferrer">Read the source code<span class="vh"> for the Collateral Provider</span></a>
                     </p>
                 </div>
             </div>
@@ -241,8 +247,12 @@
                 </svg>
                 &copy; 2024-2026 Logical Mechanism LLC
             </p>
-            <p>This page runs no scripts and loads nothing from other sites.</p>
             <ul class="social">
+                <li>
+                    <a class="footer-text-link"
+                        href="https://cexplorer.io/pool/pool1q7k8mmnvsgthp94hpn8jrnacjewplvywq70eef90fv4nu7gedzp"
+                        target="_blank" rel="noopener noreferrer">[LOGIC] stake pool</a>
+                </li>
                 <li>
                     <a href="https://github.com/logical-mechanism" target="_blank" rel="noopener noreferrer"
                         aria-label="Logical Mechanism on GitHub">
