@@ -15,11 +15,13 @@ The company is deliberately anonymous: no people, names, or faces on the site. C
 
 ```
 ├── index.html          # The site — single-page landing
+├── seedelf/index.html  # The Seedelf Wallet page, at /seedelf (root-absolute paths, since it's served with and without the slash)
 ├── css/base.css        # Stylesheet source (edit this)
-├── css/mini.base.css   # Minified stylesheet (what index.html loads)
+├── css/mini.base.css   # Minified stylesheet (what both pages load)
 ├── fonts/              # Self-hosted IBM Plex Mono + Sans (latin, 400) and OFL license
 ├── img/mark.svg        # LM mark, standalone (for dark backgrounds)
 ├── img/og.png          # 1200x630 link-preview card (og:image)
+├── img/seedelf/        # The Seedelf page's images: wallet panels cut from the Chrome Web Store screenshots, and its og.jpg
 ├── img/fullLogo.png    # Old logo; referenced by stake pool + dRep metadata, do not delete
 ├── img/poolLogo.png    # Referenced by stake pool metadata, do not delete
 ├── fav/                # Favicons (svg + png + ico) and webmanifest
